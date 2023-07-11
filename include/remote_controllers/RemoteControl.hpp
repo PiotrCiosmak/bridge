@@ -6,10 +6,11 @@
 class RemoteControl
 {
 public:
-    explicit RemoteControl(std::unique_ptr<Device> device);
-    int volumeDown();
-    int volumeUp();
+    explicit RemoteControl(const std::shared_ptr<Device>& device);
+    [[nodiscard]] int volumeDown();
+    [[nodiscard]] int volumeUp();
     virtual ~RemoteControl() = default;
+
 protected:
-    std::unique_ptr<Device> device;
+    std::shared_ptr<Device> device;
 };

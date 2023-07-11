@@ -1,4 +1,3 @@
-#include <iostream>
 #include "../../include/devices/Tv.hpp"
 
 int Tv::getVolume()
@@ -8,6 +7,6 @@ int Tv::getVolume()
 
 void Tv::setVolume(int volume)
 {
-    std::cout<<"Tv volume changed"<<std::endl;
-    this->volume=volume;
+    std::cout << "Tv volume changed" << std::endl;
+    this->volume = volume;
 }

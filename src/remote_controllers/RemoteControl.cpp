@@ -1,6 +1,6 @@
 #include "../../include/remote_controllers/RemoteControl.hpp"
 
-RemoteControl::RemoteControl(std::unique_ptr<Device> device) : device{std::move(device)}
+RemoteControl::RemoteControl(const std::shared_ptr<Device>& device) : device{device}
 {}
 
 int RemoteControl::volumeDown()

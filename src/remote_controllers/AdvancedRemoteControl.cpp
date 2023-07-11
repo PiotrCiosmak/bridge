@@ -1,6 +1,7 @@
 #include "../../include/remote_controllers/AdvancedRemoteControl.hpp"
 
-AdvancedRemoteControl::AdvancedRemoteControl(std::unique_ptr<Device> device) : RemoteControl{std::move(device)}
+AdvancedRemoteControl::AdvancedRemoteControl(const std::shared_ptr<Device>& device)
+        : RemoteControl{device}
 {}
 
 void AdvancedRemoteControl::mute()

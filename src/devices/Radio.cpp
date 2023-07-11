@@ -1,4 +1,4 @@
-#include <iostream>
+
 #include "../../include/devices/Radio.hpp"
 
 int Radio::getVolume()
@@ -8,6 +8,6 @@ int Radio::getVolume()
 
 void Radio::setVolume(int volume)
 {
-    std::cout<<"Radio volume changed"<<std::endl;
-    this->volume=volume;
+    std::cout << "Radio volume changed" << std::endl;
+    this->volume = volume;
 }
